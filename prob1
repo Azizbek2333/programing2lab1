@@ -1,7 +1,117 @@
+
+problem 3
 public class Main {
     public static void main(String[] args) {
-        String a="10-84-68\nChirchiq city\nGropark 89,45678\nUZBEKISTAN";
-        System.out.println(a);
+     float width=4.5f;
+     float height=7.9f;
+     float area=width*height;
+     float perimeter=2*width*height;
+     System.out.println(area);
+     System.out.println(perimeter);
+    }
+}
+problem 4
 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter the radius and length of a cylinder");
+        Scanner input = new Scanner(System.in);
+        double radius = input.nextDouble();
+        double length = input.nextDouble();
+     double pi=3.14;
+     double area=radius*radius*pi;
+     double volume=area*length;
+     System.out.println("The volume of the circle is "+volume);
+     System.out.println("The area of the circle is "+area);
+    }
+}
+problem 5
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter side  and lenght");
+        double lenght = input.nextDouble();
+        double side = input.nextDouble();
+        double a=1.732050/4;
+        double area = a * side*side;
+        double volume=area*lenght;
+        System.out.println("The volume is"+volume);
+        System.out.println("The area  is"+lenght);
+
+
+
+    }
+}
+problem 6 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter price of food ordered");
+        double cost=input.nextDouble();
+        double tax=cost*0.05;
+        double tip=cost*0.18;
+        double total=cost+tip+tax;
+        String formattedValue1 = String.format("%.2f", tax);
+        String formattedValue2 = String.format("%.2f", tip);
+        String formattedValue3 = String.format("%.2f", total);
+        System.out.println("Tax is "+formattedValue1);
+        System.out.println("Tip is "+formattedValue2);
+        System.out.println("Total "+formattedValue3);
+
+
+    }
+}
+problem 7 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the distance:");
+        float distance = input.nextFloat();
+        System.out.print("Enter milles per galon:");
+        float pricePerGalon = input.nextFloat();
+        System.out.print("Enter price per galom:");
+        float pricePerMile =input.nextFloat();
+        float cost=(distance/pricePerGalon)*pricePerMile;
+        System.out.println("Your cost is :"+cost);
+
+
+    }
+}
+problem 8
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n=input.nextInt();
+        int x=n/1000;
+        int y=(n-(x*1000))/100;
+        int z=(n-(x*1000)-(y*100))/10;
+        int w=(n-(x*1000)-(y*100)-(z*10));
+        int total=(x+y+z+w);
+        System.out.println(x+"+"+y+"+"+z+"+"+w+"="+total);
+
+    }
+}
+problem 9
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a=input.nextInt();
+        int b=input.nextInt();
+        int c=input.nextInt();
+       a=Math.min(a,Math.min(b,c)));
+       System.out.print((a+b+c)-;
+        System.out.print(":"+Math.max(a,Math.max(b,c)));
     }
 }
