@@ -1,5 +1,5 @@
 
-problem 3
+//problem 3
 public class Main {
     public static void main(String[] args) {
      float width=4.5f;
@@ -10,7 +10,7 @@ public class Main {
      System.out.println(perimeter);
     }
 }
-problem 4
+//problem 4
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class Main {
      System.out.println("The area of the circle is "+area);
     }
 }
-problem 5
+//problem 5
 import java.util.Scanner;
 
 public class Main {
@@ -46,7 +46,7 @@ public class Main {
 
     }
 }
-problem 6 
+//problem 6 
 import java.util.Scanner;
 
 public class Main {
@@ -67,7 +67,7 @@ public class Main {
 
     }
 }
-problem 7 
+//problem 7 
 import java.util.Scanner;
 
 public class Main {
@@ -85,7 +85,7 @@ public class Main {
 
     }
 }
-problem 8
+//problem 8
 import java.util.Scanner;
 
 public class Main {
@@ -101,7 +101,9 @@ public class Main {
 
     }
 }
-problem 9
+//problem 9
+
+
 import java.util.Scanner;
 
 public class Main {
@@ -110,8 +112,11 @@ public class Main {
         int a=input.nextInt();
         int b=input.nextInt();
         int c=input.nextInt();
-       a=Math.min(a,Math.min(b,c)));
-       System.out.print((a+b+c)-;
-        System.out.print(":"+Math.max(a,Math.max(b,c)));
+        a=Math.min(a,Math.min(b,c));
+        b= Math.max(b,c);
+        c=(a+b+c)-(a+b);
+        System.out.println(a);
+        System.out.println(c);
+        System.out.println(b);
     }
 }
